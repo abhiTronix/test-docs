@@ -1,6 +1,6 @@
 checkTemplate: true
 miniTitleLength: 8
-labelToAdd:  'MISSING : INFORMATION :mag:'
+labelToAdd: 'MISSING : INFORMATION :mag:'
 issue:
   reactions:
     - eyes
@@ -11,26 +11,27 @@ issue:
     - issue
     - debug
     - demo
+    - new
   badTitleComment: >
-    @{{ author }} Please provide us with more info about this issue title!
+    @{{ author }} Please re-edit this issue title to provide more relevant info.
 
   badBodyComment: |
-    @{{ author }} We would appreciate it if you could provide us with more info about this issue/pr!
-
-    ![Alt Text](https://media.giphy.com/media/pqnY0eDsO7nvgHvjSv/giphy.gif)
+    @{{ author }} **Not enough information**. We would appreciate it if you could elaborate on your issue by filling the template!
 
 pullRequest:
   reactions:
     - confused
+    - '-1'
   badTitles:
     - update
     - updates
     - pr
     - test
+    - new
   badTitleComment: >
-    @{{ author }} Please provide us with more info about this pr title!
+    @{{ author }} Please provide us with more info about this pr title.
 
   badBodyComment: |
-    @{{ author }} We would appreciate it if you could provide us with more info about this issue/pr!
+    @{{ author }} We would appreciate it if you could provide us with more info about this pr!
 
     ![Alt Text](https://media.giphy.com/media/pqnY0eDsO7nvgHvjSv/giphy.gif)
