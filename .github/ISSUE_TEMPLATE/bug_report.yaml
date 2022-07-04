@@ -12,9 +12,9 @@ body:
     validations:
       required: true
   - type: checkboxes
-    label: Acknowledgment
-    description: By posting this issue you acknowledge the following
     attributes:
+      label: Acknowledgment
+      description: By posting this issue you acknowledge the following options
       options:
         - label: I have searched the [issues](https://github.com/abhiTronix/vidgear/issues) for my issue and found nothing related or helpful.
           required: true
