@@ -11,13 +11,13 @@ body:
   - type: textarea
     attributes:
       label: Description
-      description: Please provide a brief description of the bug in 1-2 sentences, and why you consider it to be a bug
+      description: Please provide a brief description of the bug in 1-2 sentences, and why you consider it to be a bug?
     validations:
       required: true
   - type: checkboxes
     attributes:
       label: Acknowledgment
-      description: By posting this issue you acknowledge the following options
+      description: "By posting this issue you acknowledge the following:"
       options:
         - label: I have searched the [issues](https://github.com/abhiTronix/vidgear/issues) for my issue and found nothing related or helpful.
           required: true
