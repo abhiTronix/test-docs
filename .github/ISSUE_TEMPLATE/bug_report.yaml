@@ -11,14 +11,6 @@ body:
       description: Please provide a brief description of the bug in 1-2 sentences, and why you consider it to be a bug
     validations:
       required: true
-  - type: checkboxes
-    attributes:
-      label: Acknowledgment
-      description: By posting this issue you acknowledge the following:
-      options:
-        - label: I have searched the [issues](https://github.com/abhiTronix/vidgear/issues) for my issue and found nothing related or helpful.
-        - label: I have read the [Documentation](https://abhitronix.github.io/vidgear/latest) and found nothing related or helpful.
-        - label: I've read the [Issue Guidelines](https://abhitronix.github.io/vidgear/latest/contribution/issue/#submitting-an-issue-guidelines) and wholeheartedly agree.
   - type: textarea
     attributes:
       label: Expected behaviour
