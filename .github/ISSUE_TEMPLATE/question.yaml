@@ -29,7 +29,7 @@ body:
   - type: textarea
     attributes:
       label: Sample Python Code
-      description: If you want to share some python code (only if available) Copy and Paste it here, or else leave this block empty. You can directly paste your python code here, no need for any backticks or formatting.
+      description: If you want to share some python code (only if available) copy and paste it here, or else leave this block empty. You can directly paste your python code here, no need for any backticks or formatting.
       render: python
   - type: input
     attributes:
@@ -55,7 +55,7 @@ body:
   - type: textarea
     attributes:
       label: Any other Relevant Information?
-      description: Provide any other relevant information if available or else leave this block empty. If applicable, provide mockups or screenshots. You can drag-and-drop images here, or link to external assets.
+      description: Provide any other relevant information if available or else leave this block empty. If applicable, you can also drag-and-drop mockups or screenshots images here, or link to external assets.
       placeholder: |-
         ex. Related Issue: xyz/foo#4083
     validations:
