@@ -5,6 +5,9 @@ labels: ["BUG :bug:", "NEED TRIAGE :police_car:"]
 assignees:
   - abhiTronix
 body:
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time to fill out this bug! If you need real-time help, join us on [Gitter Community Channel](https://gitter.im/vidgear/community)."
   - type: textarea
     attributes:
       label: Description
@@ -51,29 +54,39 @@ body:
       render: shell
   - type: input
     attributes:
-      label: System/Environment information
-      description: Please provide following details about the System/Environment you experienced this bug
-      options:
-      - label: VidGear Version
-        description: What version of VidGear are you running? Run command `python -c "import vidgear; print(vidgear.__version__)"` to find out.
-        placeholder: ex. 0.2.6
-        validations:
-          required: true
-      - label: OpenCV version
-        description: What version of OpenCV binaries you're running? Run command `python -c "import cv2; print(cv2.__version__)"` to find out.
-        placeholder: ex. 4.6.0.66
-        validations:
-          required: true
-      - label: Python version
-        description: What version of Python you're running Vidgear on? Run command `python -V`  to find out.
-        placeholder: ex. 3.7
-        validations:
-          required: true
-      - label: Operating System and its version
-        description: What Operating system you're using?
-        placeholder: ex. Linux Mint 20.3 “Una” Xfce
-        validations:
-          required: true
+      label: VidGear Version
+      description: What version of VidGear are you running? Run command `python -c "import vidgear; print(vidgear.__version__)"` to find out.
+      placeholder: ex. 0.2.6
+      validations:
+        required: true
+  - type: input
+    attributes:
+      label: VidGear Version
+      description: What version of VidGear are you running? Run command `python -c "import vidgear; print(vidgear.__version__)"` to find out.
+      placeholder: ex. 0.2.6
+      validations:
+        required: true
+  - type: input
+    attributes:
+      label: Python version
+      description: What version of Python you're running Vidgear on? Run command `python -V`  to find out.
+      placeholder: ex. 3.7
+      validations:
+        required: true
+  - type: input
+    attributes:
+      label: OpenCV version
+      description: What version of OpenCV binaries you're running? Run command `python -c "import cv2; print(cv2.__version__)"` to find out.
+      placeholder: ex. 4.6.0.66
+      validations:
+        required: true
+  - type: input
+    attributes:
+      label: Operating System and its version
+      description: What Operating system you're using?
+      placeholder: ex. Linux Mint 20.3 “Una” Xfce
+      validations:
+        required: true
   - type: textarea
     attributes:
       label: Any other Relevant Information?
