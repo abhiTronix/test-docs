@@ -1,83 +1,62 @@
 name: Bug Report
-description: File a bug report for VidGear
+description: File a bug report
 title: "[Bug]: "
-labels: ["BUG :bug:", "NEED TRIAGE :police_car:"]
+labels: ["bug", "triage"]
 assignees:
-  - abhiTronix
+  - octocat
 body:
-  - type: textarea
+  - type: markdown
     attributes:
-      label: Description
-      description: Please provide a brief description of the bug in 1-2 sentences, and why you consider it to be a bug
-    validations:
-      required: true
-  - type: checkboxes
-    attributes:
-      label: Acknowledgment
-      description: By posting this issue you acknowledge the following:
-      options:
-        - label: I have searched the [issues](https://github.com/abhiTronix/vidgear/issues) for my issue and found nothing related or helpful.
-          required: true
-        - label: I have read the [Documentation](https://abhitronix.github.io/vidgear/latest) and found nothing related or helpful.
-          required: true
-        - label: I've read the [Issue Guidelines](https://abhitronix.github.io/vidgear/latest/contribution/issue/#submitting-an-issue-guidelines) and wholeheartedly agree.
-          required: true
-  - type: textarea
-    attributes:
-      label: Expected behaviour
-      description: Please describe precisely what you'd expect to happen.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Actual behaviour
-      description: Please describe precisely what is actually happening.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Steps to reproduce
-      description: Please describe the steps to reproduce the bug.
-      placeholder: |-
-        1. ...
-        2. ...
-        3. ...
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant terminal log output. You can enable logging with `logging=True` in any Vidgear API for getting debug output. (Note: This will be automatically formatted into shell output, so no need for backticks)
-      render: shell
+      value: |
+        Thanks for taking the time to fill out this bug report!
   - type: input
-    label: System/Environment information
-    description: Please provide following details about the System/Environment you experienced the bug in:
+    id: contact
     attributes:
-      - label: VidGear Version
-        description: What version of VidGear are you running? Run command `python -c "import vidgear; print(vidgear.__version__)"` to find out.
-        placeholder: ex. 0.2.6
-        validations:
-          required: true
-      - label: OpenCV version
-        description: What version of OpenCV binaries you're running? Run command `python -c "import cv2; print(cv2.__version__)"` to find out.
-        placeholder: ex. 4.6.0.66
-        validations:
-          required: true
-      - label: Python version
-        description: What version of Python you're running Vidgear on? Run command `python -V`  to find out.
-        placeholder: ex. 3.7
-        validations:
-          required: true
-      - label: Operating System and its version
-        description: What Operating system you're using?
-        placeholder: ex. Linux Mint 20.3 “Una” Xfce
-        validations:
-          required: true
-  - type: textarea
-    attributes:
-      label: Any other Relevant Information?
-      description: Provide any other relevant information(or screenshots) if available or else leave this block empty.
-      placeholder: |-
-        ex. Related Issue: xyz/foo#4083
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
     validations:
       required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
