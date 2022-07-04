@@ -46,9 +46,14 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Relevant terminal log output
-      description: Please copy and paste any relevant terminal log output here. You can enable logging with `logging=True` in any Vidgear API for getting verbose terminal logs.
+      label: Terminal log output
+      description: Please copy and paste any relevant terminal log output to help quickly debug bugs. You can enable logging with `logging=True` in any Vidgear API for getting verbose terminal logs.
       render: shell
+  - type: textarea
+    attributes:
+      label: Python Code
+      description: Share your python code here (only if available) or else leave this block empty. You can directly paste your python code here, no need for any backticks or formatting.
+      render: python
   - type: input
     attributes:
       label: VidGear Version
