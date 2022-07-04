@@ -56,41 +56,34 @@ body:
     attributes:
       label: VidGear Version
       description: What version of VidGear are you running? Run command `python -c "import vidgear; print(vidgear.__version__)"` to find out.
-      placeholder: ex. 0.2.6
-      validations:
-        required: true
-  - type: input
-    attributes:
-      label: VidGear Version
-      description: What version of VidGear are you running? Run command `python -c "import vidgear; print(vidgear.__version__)"` to find out.
-      placeholder: ex. 0.2.6
-      validations:
-        required: true
+      placeholder: Example: 0.2.6
+    validations:
+      required: true
   - type: input
     attributes:
       label: Python version
       description: What version of Python you're running Vidgear on? Run command `python -V`  to find out.
-      placeholder: ex. 3.7
-      validations:
-        required: true
+      placeholder: Example: 3.7
+    validations:
+      required: true
   - type: input
     attributes:
       label: OpenCV version
       description: What version of OpenCV binaries you're running? Run command `python -c "import cv2; print(cv2.__version__)"` to find out.
-      placeholder: ex. 4.6.0.66
-      validations:
-        required: true
+      placeholder: Example: 4.6.0.66
+    validations:
+      required: true
   - type: input
     attributes:
-      label: Operating System and its version
+      label: Operating System version
       description: What Operating system you're using?
-      placeholder: ex. Linux Mint 20.3 “Una” Xfce
-      validations:
-        required: true
+      placeholder: Example: Linux Mint 20.3 “Una” Xfce
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Any other Relevant Information?
-      description: Provide any other relevant information(or screenshots) if available or else leave this block empty.
+      description: Provide any other relevant information if available or else leave this block empty.
       placeholder: |-
         ex. Related Issue: xyz/foo#4083
     validations:
