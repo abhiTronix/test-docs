@@ -5,9 +5,6 @@ labels: ["BUG :bug:", "NEED TRIAGE :police_car:"]
 assignees:
   - abhiTronix
 body:
-  - type: markdown
-    attributes:
-      value: "Thanks for taking the time to fill out this bug! If you need real-time help, join us on [Gitter Community Channel](https://gitter.im/vidgear/community)."
   - type: textarea
     attributes:
       label: Description
