@@ -49,8 +49,8 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant terminal log output. You can enable logging with `logging=True` in any Vidgear API for getting debug output. This will be automatically formatted into shell output, so no need for backticks.
+      label: Relevant terminal log output
+      description: Please copy and paste any relevant terminal log output here. You can enable logging with `logging=True` in any Vidgear API for getting verbose terminal logs.
       render: shell
   - type: input
     attributes:
