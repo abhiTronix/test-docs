@@ -50,9 +50,10 @@ body:
       description: Please copy and paste any relevant terminal log output. You can enable logging with `logging=True` in any Vidgear API for getting debug output. This will be automatically formatted into shell output, so no need for backticks.
       render: shell
   - type: input
-    label: System/Environment information
-    description: Please provide following details about the System/Environment you experienced this bug
     attributes:
+      label: System/Environment information
+      description: Please provide following details about the System/Environment you experienced this bug
+      options:
       - label: VidGear Version
         description: What version of VidGear are you running? Run command `python -c "import vidgear; print(vidgear.__version__)"` to find out.
         placeholder: ex. 0.2.6
